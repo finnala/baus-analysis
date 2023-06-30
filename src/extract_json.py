@@ -24,7 +24,6 @@ def is_player(player: dict, summoner_name: str) -> bool:
     return player["summonerName"] == summoner_name
 
 
-# Returns the entire player stats
 def get_player_stats(players: list, summoner_name: str) -> list:
     return list(filter(lambda x: is_player(x, summoner_name), players))
 
